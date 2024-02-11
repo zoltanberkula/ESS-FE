@@ -1,4 +1,4 @@
-# Energy Storage and Management System
+# Energy Storage and Management System Front End
 
 - Solar Systems
 - Battery Systems
