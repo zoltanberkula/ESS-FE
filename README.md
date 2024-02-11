@@ -20,8 +20,6 @@
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
-
 - [ReactJS]
 - [NodeJS]
 - [GCP]
@@ -33,8 +31,6 @@ Dillinger uses a number of open source projects to work properly:
 - [ModbusRTU]
 
 ## Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
