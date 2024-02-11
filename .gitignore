@@ -1,0 +1,8 @@
+/node_modules
+/build
+.env
+/ess-fe/src/keys
+/ess-fe/src/firestore.js
+/ess-fe/src/weatherObserver.js
+/ess-fe/src/httpServer.js
+/ess-fe/src/errorHandler.js

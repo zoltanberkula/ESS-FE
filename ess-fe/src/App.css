@@ -1,0 +1,639 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #686868;
+}
+
+.root {
+  background-color: #686868;
+}
+
+.MuiGrid-container {
+  display: grid;
+  /* grid-template-columns: 200px 250px; */
+  /* grid-auto-rows: minmax(150px, auto); */
+  /* grid-gap: 20px; */
+  justify-items: stretch;
+  /* align-items: stretch; */
+}
+
+.MuiGrid-item {
+  align-self: start;
+  justify-self: center;
+}
+
+.SolarData {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+#solarDataDiv {
+  background-color: #38a3a5;
+  margin-left: 20;
+  margin-right: 20;
+  color: black;
+}
+
+#solarVoltageDiv {
+  background-color: #38a3a5;
+}
+
+#solarCurrentDiv {
+  background-color: #38a3a5;
+}
+
+#solarPowerDiv {
+  background-color: #38a3a5;
+}
+
+.BatteryData {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#batteryDataDiv {
+  background-color: #38a3a5;
+}
+
+#batteryVoltageDiv {
+  background-color: #38a3a5;
+}
+
+#batteryCurrentDiv {
+  background-color: #38a3a5;
+}
+
+#batterySOCDiv {
+  background-color: #38a3a5;
+}
+
+#batterySOHDiv {
+  background-color: #38a3a5;
+}
+
+.acmpData {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#acmpDataDiv {
+  background-color: #38a3a5;
+}
+
+.dcmpData {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dcmpDataDiv {
+  background-color: #38a3a5;
+}
+
+.DataTable {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table-data-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 3em;
+}
+
+.header {
+  background-color: #3a3d3f;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #57d1b7;
+}
+
+.footer {
+  background-color: #3a3d3f;
+}
+
+.Navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #3a3d3f;
+  min-height: 10vh;
+  font-size: calc(8px + 2vmin);
+}
+
+.DataLabel {
+  text-align: center;
+  color: #3a3d3f;
+}
+
+li a {
+  /* display: block; */
+  color: #57d1b7;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+ul {
+  /* background-color: #3a3d3f; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.record-table {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  /* height: 200px; */
+}
+
+#record-table-name {
+  background-color: azure;
+}
+
+#record-table-voltage {
+  background-color: bisque;
+}
+
+#record-table-current {
+  background-color: aliceblue;
+}
+
+#record-table-power {
+  background-color: #57d1b7;
+}
+
+#record-table-frequency {
+  background-color: darkgreen;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+td {
+  border: 2px solid black;
+  width: 30em;
+  /* background-color: #2a9d8f; */
+}
+
+.dataTable {
+  border-radius: 10px;
+  border: 2px solid;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #38a3a5;
+  color: black;
+}
+
+.tableClass {
+  border-radius: 10px;
+  background-color: #00ffff;
+}
+
+/* --BEGIN SOLAR TELEMETRY DATA BEGIN-- */
+.solarTelemetryWrapper {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.solarDataGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.solarVoltageGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+
+.solarCurrentGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.solarPowerGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+/* --END SOLAR TELEMETRY DATA END-- */
+
+/* --BEGIN BATTERY TELEMETRY DATA BEGIN-- */
+.batteryTelemetryWrapper {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.batteryDataGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.batteryVoltageGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+
+.batteryCurrentGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.batterySOCGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+/* --END BATTERY TELEMETRY DATA END-- */
+
+/* --BEGIN AC MP TELEMETRY DATA BEGIN-- */
+.mpACTelemetryWrapper {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.mpACDataGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.mpACVoltageGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+
+.mpACCurrentGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mpACPowerGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+/* --END AC MP TELEMETRY DATA END-- */
+
+/* --BEGIN DC MP TELEMETRY DATA BEGIN-- */
+.mpDCTelemetryWrapper {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.mpDCDataGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.mpDCVoltageGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+
+.mpDCCurrentGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mpDCPowerGraphWrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+/* --END DC MP TELEMETRY DATA END-- */
+
+.blockDiagramWrapper {
+  position: relative;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #38a3a5;
+}
+
+img {
+  position: relative;
+  z-index: 1;
+}
+
+.solarHoverBox1 {
+  width: 215px;
+  height: 200px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 20px;
+  left: 110px;
+  transition: all 0.2s;
+}
+
+.solarHoverBox1:hover .solar-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.solar-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 120px;
+  left: 100px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+
+.solarHoverBox2 {
+  width: 140px;
+  height: 90px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 90px;
+  left: 420px;
+  transition: all 0.2s;
+}
+
+.solarHoverBox2:hover .solar-info-box2 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.solar-info-box2 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 40px;
+  left: 40px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+
+.bmsHoverBox1 {
+  width: 65px;
+  height: 80px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 100px;
+  left: 700px;
+  transition: all 0.2s;
+}
+
+.bmsHoverBox1:hover .bms-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.bms-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 30px;
+  left: 40px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+
+.acGenHoverBox1 {
+  width: 170px;
+  height: 120px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 285px;
+  left: 110px;
+  transition: all 0.2s;
+}
+
+.acGenHoverBox1:hover .acgen-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.acgen-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 40px;
+  left: -90px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+.pwGridHoverBox1 {
+  width: 170px;
+  height: 120px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 420px;
+  left: 110px;
+  transition: all 0.2s;
+}
+
+.pwGridHoverBox1:hover .pwgrid-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.pwgrid-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 40px;
+  left: 90px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+.invHoverBox1 {
+  width: 170px;
+  height: 220px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 300px;
+  left: 420px;
+  transition: all 0.2s;
+}
+
+.invHoverBox1:hover .inv-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.inv-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 90px;
+  left: 90px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+.batHoverBox1 {
+  width: 170px;
+  height: 220px;
+  /* border: 1px solid; */
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 2;
+  top: 300px;
+  left: 660px;
+  transition: all 0.2s;
+}
+
+.batHoverBox1:hover .bat-info-box1 {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.info-box-header {
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #38a3a5;
+}
+
+.bat-info-box1 {
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 90px;
+  left: 90px;
+  width: 140px;
+  height: auto;
+  background-color: #118ab2;
+  transition: all 0.2s;
+}
+
+/* COLOR CHEAT SHEET
+Voltage: stroke="#111D13"
+Current: stroke="#415D43"
+Power: stroke="#22577A" 
+SpaceCade: #2D3142
+BlackCoral: #4F5D75
+Silver: #BFC0C0
+Mandarin: #EF8354
+
+EtonBlue: #A1CCA5
+DarkSeaGreen: #8FB996
+RussianGreen: #709775
+HunterGreen: #415D43
+DarkJungleGreen: #111D13
+
+
+*/
+
+.posts {
+  text-align: left;
+}
+
+.post {
+  border-bottom: 1px solid #000;
+}
+
+.FilterQueryContainer {
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 320px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 175px;
+}
+
+.LogQueryContainer {
+  /* border: 1px solid; */
+  margin: 20px;
+}
+
+.QueryContainer {
+  border: 1px solid;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #38a3a5;
+  width: 950px;
+  height: auto;
+}
